@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 100%; }
+
+body {
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  color: #8bacda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d192b;
+  height: 100vh; }
+
+img {
+  width: 100%; }
+
+.link {
+  color: white;
+  transition: color 300ms ease-out;
+  text-decoration: none; }
+  .link:hover, .link:focus {
+    color: #00fff7;
+    outline: none; }
+
+.card {
+  border-radius: 1rem;
+  margin: 0 auto;
+  width: 21.813rem;
+  background-color: #14253d; }
+  .card__container {
+    margin: 0 auto;
+    padding: 1.49rem; }
+  .card__image-container {
+    height: 18.75rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; }
+    .card__image-container img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      height: 100%; }
+    .card__image-container::before {
+      content: '';
+      background-color: rgba(0, 255, 247, 0.5);
+      background-image: url("../../images/icon-view.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      transition: opacity 300ms ease-out; }
+    .card__image-container:focus, .card__image-container:hover {
+      outline: none; }
+      .card__image-container:focus::before, .card__image-container:hover::before {
+        opacity: 1; }
+  .card__title {
+    font-size: 1.375rem;
+    margin-bottom: 0.82em; }
+  .card__description {
+    font-size: 1.125rem;
+    margin-bottom: 1.14em; }
+  .card__seperator {
+    height: 2px;
+    background-color: #2f415b;
+    margin-bottom: 1rem; }
+
+.card__more-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.2rem;
+  margin-bottom: 1.4375rem; }
+  .card__more-info > * {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+  .card__more-info .icon {
+    height: 100%;
+    width: unset;
+    margin-right: 0.5rem; }
+  .card__more-info .more-info__price {
+    font-weight: 600;
+    color: #00fff7; }
+
+.card__attribution {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .card__attribution * + * {
+    margin-left: 0.75rem; }
+  .card__attribution .attribution__avatar {
+    height: 1.875rem;
+    border-radius: 10rem;
+    border: 1px solid white; }
+    .card__attribution .attribution__avatar > img {
+      height: 100%; }
