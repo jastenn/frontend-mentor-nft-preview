@@ -13,7 +13,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -35,9 +34,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Sass
-- Flexbox
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Flexbox - Layout
 
 ### What I learned
 
@@ -51,5 +48,3 @@ I'll try to complete some frontend challenge while exploring things on programmi
 
 - Frontend Mentor - [@jastenn](https://www.frontendmentor.io/profile/jastenn)
 - Facebook - [Justine Aviso](https://www.facebook.com/aviso.jstn)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
